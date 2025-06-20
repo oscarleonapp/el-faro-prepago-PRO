@@ -11,7 +11,7 @@
     <div class="w-full max-w-sm bg-gray-800 bg-opacity-90 rounded-2xl shadow-lg p-6 text-center">
         <!-- Avatar -->
         <div class="relative w-32 h-32 mx-auto mb-4">
-            <img src="assets/galeria/3.jpg" alt="Retrato de una mujer joven sonriendo con fondo desenfocado, ambiente cálido y alegre" class="w-32 h-32 rounded-full object-cover border-4 border-blue-500 relative z-10"/>
+            <img src="assets/galeria/3.jpg" alt="Retrato de una mujer joven sonriendo con fondo desenfocado, ambiente cálido y alegre" class="w-32 h-32 rounded-full object-cover border-4 border-white-500 relative z-10"/>
             <div class="absolute inset-0 rounded-full pointer-events-none animate-flame" style="z-index:1;">
                 <svg viewBox="0 0 128 128" class="w-full h-full">
                     <defs>
@@ -41,20 +41,31 @@
         <h1 class="text-2xl font-bold text-white mb-2">NatthyChilena_Oficial</h1>
         <p class="text-gray-300 mb-4">🎭 Actriz y modelo | ¡Explora mis proyectos y más aquí! ✨</p>
         <!-- Botones de enlaces -->
-        <div class="space-y-3">
-            <a href="https://tusitio.com" target="_blank" class="block w-full bg-white hover:bg-blue-100 text-blue-600 font-semibold py-3 rounded-xl transition">Natthychilena - Arsmate</a>
-            <a href="https://onlyfans.com/NatthyChilena" target="_blank" class="block w-full bg-white hover:bg-blue-100 text-blue-600 font-semibold py-3 rounded-xl transition">Onlyfans</a>
+        <div class="space-y-3 flex flex-col items-center">
+            <a href="https://onlyfans.com/NatthyChilena" target="_blank" class="flex items-center justify-center w-full bg-white hover:bg-blue-100 text-blue-600 font-semibold py-3 rounded-xl transition relative animate-glow">
+                <img src="assets/img/naty.jpg" alt="OnlyFans" class="w-6 h-6 mr-3 rounded-full" />
+                Onlyfans
+                <style>
+                    @keyframes glowPulse {
+                        0%, 100% { box-shadow: 0 0 0px 0 #60a5fa; }
+                        50% { box-shadow: 0 0 16px 4px #60a5fa88; }
+                    }
+                    .animate-glow {
+                        animation: glowPulse 1.8s infinite;
+                    }
+                </style>
+            </a>
             <a href="https://www.tiktok.com/@natthychilena_oficial" target="_blank" class="block w-full bg-white hover:bg-blue-100 text-blue-600 font-semibold py-3 rounded-xl transition">NatthyChilena - Tiktok</a>
             <a href="https://arsmate.com/Natthychilena" target="_blank" class="block w-full bg-white hover:bg-blue-100 text-blue-600 font-semibold py-3 rounded-xl transition">Natthychilena - Arsmate</a>
             <a href="https://www.xvideos.com/natthyputa#_tabVideos" target="_blank" class="block w-full bg-white hover:bg-blue-100 text-blue-600 font-semibold py-3 rounded-xl transition">Natthyputa - XVIDEOS</a>
         </div>
         <!-- Iconos sociales -->
-        <div class="mt-6 flex justify-center space-x-4">
+        <!-- <div class="mt-6 flex justify-center space-x-4">
             <a href="https://twitter.com/tuusuario" target="_blank" aria-label="Twitter">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400 hover:text-white transition" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.38 8.59 8.59 0 01-2.73 1.05 4.28 4.28 0 00-7.29 3.9A12.14 12.14 0 013 4.8a4.27 4.27 0 001.33 5.7 4.25 4.25 0 01-1.94-.54v.05a4.28 4.28 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54a12.13 12.13 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.7 8.7 0 0024 5.5a8.45 8.45 0 01-2.54.7z"/>
                 </svg>
-            </a>
+            </a> -->
             <!-- Añade más iconos según necesites -->
         </div>
     </div>
