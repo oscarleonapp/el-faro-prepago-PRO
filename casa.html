@@ -1,161 +1,321 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Casa Lady</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background: #fafafa;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 430px;
-      width: 100%;
-      margin: 30px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #fff;
-      border-radius: 24px;
-      box-shadow: 0 6px 32px rgba(0,0,0,0.10);
-      padding: 40px 24px 32px 24px;
-    }
-    h1 {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 2.7rem;
-      font-weight: 500;
-      margin-bottom: 22px;
-      letter-spacing: 2px;
-      text-align: center;
-    }
-    .carousel {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-bottom: 24px;
-    }
-    .girl {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 90px;
-    }
-    .girl img {
-      width: 78px;
-      height: 98px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-      background: #eaeaea;
-    }
-    .girl span {
-      margin-top: 7px;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      color: #3a3a3a;
-    }
-    .contact-box {
-      margin: 30px 0 18px 0;
-      padding: 12px 30px;
-      background: #eafbe6;
-      border: 2px solid #71cc6c;
-      border-radius: 12px;
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: #22893c;
-      text-align: center;
-      letter-spacing: 2px;
-      box-shadow: 0 2px 8px rgba(34,137,60,0.07);
-    }
-    .info-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      width: 100%;
-      margin-top: 8px;
-    }
-    .info-col {
-      background: #f7f7f7;
-      border-radius: 12px;
-      padding: 16px 10px;
-      min-height: 80px;
-      text-align: center;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
-    }
-    .info-col h3 {
-      margin: 0 0 10px 0;
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: #484848;
-      letter-spacing: 1px;
-    }
-    .info-col ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      color: #3a3a3a;
-      font-size: 1.05rem;
-    }
-    @media (max-width: 500px) {
-      .container {
-        padding: 24px 6px 20px 6px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Escort Camila – La Serena</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --brand: #f40030; /* fondo principal */
+        --brand-dark: #000; /* encabezado */
+        --text-light: #ffffff;
+        --card-bg: #ffffff;
       }
-      .carousel {
-        gap: 10px;
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
-      .girl {
-        width: 70px;
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: var(--brand);
+        color: var(--text-light);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
       }
-      .girl img {
-        width: 60px;
-        height: 76px;
+
+      a {
+        color: inherit;
+        text-decoration: none;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Casa Lady</h1>
-    <div class="carousel">
-      <div class="girl">
-        <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Megan">
-        <span>Megan</span>
+
+      /* ---------- Encabezado ---------- */
+      header {
+        background: var(--brand-dark);
+        padding: 0.75rem 1rem;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      /* ---------- Botones de contacto ---------- */
+      .contact-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+      .contact-buttons a {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+      .whatsapp {
+        background: #25d366;
+        color: #fff;
+      }
+      .phone {
+        background: #eeeeee;
+        color: #000;
+      }
+
+      /* ---------- Galería principal ---------- */
+      .main-gallery {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        
+      }
+      .main-photo,
+      .side-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 2px solid var(--text-light);
+      }
+      .side-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      /* ---------- Thumbnails / Habitaciones ---------- */
+      .room-thumbs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* ¡AQUÍ se asegura el centrado! */
+        gap: 0.75rem;
+        max-width: 900px;
+        margin: 1rem auto 0;
+        padding: 0 1rem;
+      }
+      .room-thumb {
+        width: 110px;
+        border: 3px solid var(--text-light);
+        border-radius: 4px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      .room-thumb img {
+        width: 100%;
+        display: block;
+      }
+      .room-thumb span {
+        display: block;
+        text-align: center;
+        background: var(--brand-dark);
+        font-size: 0.8rem;
+        padding: 0.25rem 0;
+      }
+      .room-thumb:hover {
+        transform: scale(1.05);
+      }
+
+      /* ---------- Amenities ---------- */
+      .amenities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 0.5rem;
+        max-width: 900px;
+        margin: 1rem auto;
+        padding: 0 1rem;
+      }
+      .amenity {
+        background: var(--card-bg);
+        color: #000;
+        padding: 0.45rem 0.6rem;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .amenity.no {
+        opacity: 0.6;
+        text-decoration: line-through;
+      }
+      .amenity .icon {
+        font-size: 1rem;
+      }
+
+      /* ---------- Descripción ---------- */
+      .description {
+        background: var(--card-bg);
+        color: #000;
+        max-width: 900px;
+        margin: 1.5rem auto;
+        border-radius: 8px;
+        padding: 1.5rem;
+      }
+      .description h2 {
+        text-align: center;
+        margin-bottom: 0.75rem;
+      }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 768px) {
+        .main-gallery {
+          grid-template-columns: 1fr;
+        }
+        .side-photo {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Casa Escort Camila – La Serena</header>
+
+    <!-- Botones de contacto -->
+    <section class="contact-buttons">
+      <a href="https://wa.me/56930248175" class="whatsapp">+569&nbsp;3024&nbsp;8175</a>
+      <a href="tel:+56930248175" class="phone">+569&nbsp;3024&nbsp;8175</a>
+    </section>
+
+    <!-- Galería principal -->
+    <section class="main-gallery">
+      <img
+        src="linktree-assets/casa/01/1.jpg"
+        alt="Casa principal"
+        class="main-photo"
+        id="mainPhoto"
+      />
+      <div class="side-column">
+        <img
+          src="linktree-assets/casa/01/2.jpg"
+          alt="Vista lateral"
+          class="side-photo"
+          onclick="swap('images/house-side-1.jpg')"
+        />
+        <img
+          src="linktree-assets/casa/01/2.jpg"
+          alt="Sala interior"
+          class="side-photo"
+          onclick="swap('images/house-interior-1.jpg')"
+        />
       </div>
-      <div class="girl">
-        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Kathy">
-        <span>Kathy</span>
+    </section>
+
+    <!-- Thumbnails / Habitaciones -->
+    <div class="room-thumbs">
+      <div class="room-thumb" onclick="swap('images/hab1.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 1" />
+        <span>Habitación&nbsp;1</span>
       </div>
-      <div class="girl">
-        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Luna">
-        <span>Luna</span>
+      <div class="room-thumb" onclick="swap('images/hab2.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 2" />
+        <span>Habitación&nbsp;2</span>
       </div>
+      <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+            <div class="room-thumb" onclick="swap('images/hab3.jpg')">
+        <img src="linktree-assets/casa/01/2.jpg" alt="Habitación 3" />
+        <span>Habitación&nbsp;3</span>
+      </div>
+      <!-- Repite hasta la habitación 10 -->
     </div>
-    <div class="contact-box">
-      +56 9 3029 8175
+
+    <!-- Amenities -->
+    <div class="amenities">
+      <div class="amenity"><span class="icon">✔️</span>Cocina compartida</div>
+      <div class="amenity no"><span class="icon">❌</span>Admite mascotas</div>
+      <div class="amenity"><span class="icon">✔️</span>Wifi</div>
+      <div class="amenity"><span class="icon">✔️</span>Centro de ciudad</div>
+      <div class="amenity"><span class="icon">✔️</span>Televisión</div>
+      <div class="amenity"><span class="icon">✔️</span>Trabajo full horario</div>
+      <div class="amenity"><span class="icon">✔️</span>Cámaras de seguridad</div>
+      <div class="amenity"><span class="icon">✔️</span>Recibe agencias</div>
+      <div class="amenity no"><span class="icon">❌</span>Recibe parejas</div>
+      <div class="amenity"><span class="icon">✔️</span>Pide referencias</div>
     </div>
-    <div class="info-grid">
-      <div class="info-col">
-        <h3>Horario</h3>
-        <ul>
-          <li>Lunes a Domingo</li>
-          <li>10:00 - 22:00 hrs</li>
-        </ul>
-      </div>
-      <div class="info-col">
-        <h3>Valores</h3>
-        <ul>
-          <li>30 min: $25.000</li>
-          <li>60 min: $40.000</li>
-        </ul>
-      </div>
+
+    <!-- Descripción -->
+    <div class="description">
+      <h2>Casa Escort Camila</h2>
+      <p>
+        En La Serena, te ofrecemos el espacio perfecto para trabajar con total
+        tranquilidad. Nuestra casa está diseñada pensando en la comodidad y
+        privacidad de las escorts, con habitaciones completamente equipadas,
+        limpias y acogedoras. Cada espacio cuenta con cama amplia, baño
+        privado, televisión, Wi‑Fi y entrada independiente, para que te sientas
+        segura y libre de interrupciones. Además, el ambiente es discreto y
+        seguro, ideal para recibir a tus clientes con total confianza. Estamos
+        ubicados en un sector tranquilo y de fácil acceso, con disponibilidad
+        horaria flexible y tarifas pensadas para tu conveniencia. Aquí tu
+        bienestar es prioridad.
+      </p>
     </div>
-  </div>
-</body>
+
+    <script>
+      /**
+       * Reemplaza la imagen principal por la seleccionada
+       * @param {string} src - Ruta de la imagen
+       */
+      function swap(src) {
+        const main = document.getElementById("mainPhoto");
+        main.src = src;
+      }
+    </script>
+  </body>
 </html>
