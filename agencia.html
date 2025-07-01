@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Ladys – Escort en La Serena & Coquimbo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-bg: #f40030;   /* rojo principal */
+      --secondary-bg: #000;    /* negro */
+      --accent: #ffd700;       /* amarillo */
+      --text-light: #fff;
+      --card-width: 170px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: var(--primary-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ===================== HEADER ===================== */
+    header {
+      background: var(--secondary-bg);
+      border-bottom: 4px solid var(--accent);
+      border-top: 4px solid var(--accent);
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    /* ===================== CONTACTO ===================== */
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.2rem 0 1.8rem;
+      flex-wrap: wrap;
+    }
+    .contact-btn {
+      background: var(--text-light);
+      color: var(--secondary-bg);
+      border-radius: 2rem;
+      padding: 0.35rem 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+    .contact-btn:hover { opacity: 0.85; }
+    .contact-btn i { color: #25d366; } /* WhatsApp verde */
+
+    /* ===================== GALERÍA ===================== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+      gap: 1.4rem;
+      max-width: 1080px;
+      margin: 0 auto 2.5rem;
+      padding: 0 1rem;
+    }
+    .card {
+      border: 3px solid var(--accent);
+      background: #1a1a1a;
+      border-radius: 4px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    .card figcaption {
+      padding: 0.4rem 0.2rem 0.6rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+    .card span { display: block; font-size: 0.75rem; opacity: 0.8; }
+
+    /* ===================== INFO SECTIONS ===================== */
+    .sections {
+      display: grid;
+      gap: 2rem;
+      max-width: 1080px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+    }
+
+    .about {
+      background: #fff;
+      color: #000;
+      border-radius: 8px;
+      padding: 1.5rem 1.3rem;
+      text-align: justify;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .aside-box {
+      background: var(--secondary-bg);
+      border-left: 6px solid var(--accent);
+      border-radius: 4px;
+      padding: 1rem 1.2rem;
+      font-size: 0.9rem;
+    }
+    .aside-box h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .aside-box ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      text-align: center;
+    }
+
+    /* Arrange side-by-side on wide screens */
+    @media (min-width: 800px) {
+      .sections {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ------------- HEADER ------------- -->
+  <header>
+    Casa Ladys – Escort en La Serena y Coquimbo
+  </header>
+
+  <!-- ------------- CONTACTO ------------- -->
+  <div class="contact-bar">
+    <button class="contact-btn" id="btnWhats">
+      <i class="fa-brands fa-whatsapp"></i> +569 3024 8175
+    </button>
+    <button class="contact-btn" id="btnPhone">
+      <i class="fa-solid fa-phone"></i> +569 3024 8175
+    </button>
+  </div>
+
+  <!-- ------------- GALERÍA ------------- -->
+  <section class="gallery">
+    <!-- Reemplaza src con tus rutas de imagen -->
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
+      <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
+      <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
+      <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
+      <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
+    </figure>
+
+        <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
+      <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
+      <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
+    </figure>
+
+        <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
+      <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
+      <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
+    </figure>
+
+        <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
+      <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
+      <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
+    </figure>
+
+    <!-- Duplica/edita según necesites -->
+  </section>
+
+  <!-- ------------- INFO & ASIDES ------------- -->
+  <section class="sections">
+    <!-- Descripción -->
+    <article class="about">
+      <p>
+        Ubicada en el corazón de Peñuelas, en la región de Coquimbo, nuestra agencia
+        de acompañantes ofrece una experiencia única y exclusiva en un entorno costero vibrante y sofisticado.
+        Rodeada de atracciones como el reconocido <strong>Casino Enjoy Coquimbo</strong> y la pintoresca
+        avenida Costanera, nuestra ubicación proporciona el escenario perfecto para encuentros memorables.
+      </p>
+      <p>
+        Contamos con un selecto grupo de acompañantes, cada una destacada por su belleza, elegancia y carisma. Nuestras profesionales están comprometidas a brindar una atención personalizada y discreta, adaptándose a las preferencias y deseos de cada cliente para asegurar una experiencia placentera y satisfactoria.
+      </p>
+      <p>
+        La seguridad y confidencialidad son pilares fundamentales en nuestro servicio. Operamos bajo estrictos estándares de privacidad, garantizando un ambiente seguro y cómodo para todos nuestros clientes.
+      </p>
+      <p>
+        Ya sea que busques compañía para una cena elegante, un evento social o simplemente un momento de relajación, nuestra agencia en Peñuelas está preparada para cumplir tus expectativas con profesionalismo y dedicación.
+      </p>
+    </article>
+
+    <!-- Horarios -->
+    <aside class="aside-box">
+      <h3>HORARIOS</h3>
+      <ul>
+        <li>Martes a Viernes<br/>14:00 – 02:00 hrs.</li>
+        <li>Sábado y Domingo<br/>17:00 – 06:00 hrs.</li>
+      </ul>
+    </aside>
+
+    <!-- Valores -->
+    <aside class="aside-box">
+      <h3>VALORES</h3>
+      <ul>
+        <li>Momento — <strong>$ 10 000</strong></li>
+        <li>30 Minutos — <strong>$ 20 000</strong></li>
+        <li>60 Minutos — <strong>$ 30 000</strong></li>
+        <li>Domicilio — <strong>$ 40 000</strong></li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- ------------- JS ------------- -->
+  <script>
+    // Abre WhatsApp con mensaje predeterminado
+    document.getElementById('btnWhats').addEventListener('click', () => {
+      const phone = '56930248175';
+      const msg = encodeURIComponent('¡Hola Casa Ladys! Me gustaría agendar una cita.');
+      window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+    });
+
+    // Llamada telefónica directa
+    document.getElementById('btnPhone').addEventListener('click', () => {
+      window.location.href = 'tel:+56930248175';
+    });
+  </script>
+</body>
+</html>

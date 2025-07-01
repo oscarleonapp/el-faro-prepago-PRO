@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Casa Lady</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #fafafa;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 430px;
+      width: 100%;
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+      padding: 40px 24px 32px 24px;
+    }
+    h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.7rem;
+      font-weight: 500;
+      margin-bottom: 22px;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    .carousel {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .girl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90px;
+    }
+    .girl img {
+      width: 78px;
+      height: 98px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+      background: #eaeaea;
+    }
+    .girl span {
+      margin-top: 7px;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #3a3a3a;
+    }
+    .contact-box {
+      margin: 30px 0 18px 0;
+      padding: 12px 30px;
+      background: #eafbe6;
+      border: 2px solid #71cc6c;
+      border-radius: 12px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #22893c;
+      text-align: center;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 8px rgba(34,137,60,0.07);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+      margin-top: 8px;
+    }
+    .info-col {
+      background: #f7f7f7;
+      border-radius: 12px;
+      padding: 16px 10px;
+      min-height: 80px;
+      text-align: center;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    }
+    .info-col h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #484848;
+      letter-spacing: 1px;
+    }
+    .info-col ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: #3a3a3a;
+      font-size: 1.05rem;
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 24px 6px 20px 6px;
+      }
+      .carousel {
+        gap: 10px;
+      }
+      .girl {
+        width: 70px;
+      }
+      .girl img {
+        width: 60px;
+        height: 76px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Casa Lady</h1>
+    <div class="carousel">
+      <div class="girl">
+        <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Megan">
+        <span>Megan</span>
+      </div>
+      <div class="girl">
+        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Kathy">
+        <span>Kathy</span>
+      </div>
+      <div class="girl">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Luna">
+        <span>Luna</span>
+      </div>
+    </div>
+    <div class="contact-box">
+      +56 9 3029 8175
+    </div>
+    <div class="info-grid">
+      <div class="info-col">
+        <h3>Horario</h3>
+        <ul>
+          <li>Lunes a Domingo</li>
+          <li>10:00 - 22:00 hrs</li>
+        </ul>
+      </div>
+      <div class="info-col">
+        <h3>Valores</h3>
+        <ul>
+          <li>30 min: $25.000</li>
+          <li>60 min: $40.000</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
