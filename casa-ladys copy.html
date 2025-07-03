@@ -36,15 +36,6 @@
       font-size: 1.1rem;
     }
 
-     header h1 {
-      font-size: 2rem;
-      font-style: italic;
-     }
-    header h1 span{
-     color: #ffd700;
-     text-transform: uppercase;
-    }
-
     /* ===================== CONTACTO ===================== */
     .contact-bar {
       display: flex;
@@ -64,7 +55,6 @@
       gap: 0.4rem;
       cursor: pointer;
       transition: opacity 0.2s ease;
-      border: 2px solid #fff;
     }
     .contact-btn:hover { opacity: 0.85; }
     .contact-btn i { color: #25d366; } /* WhatsApp verde */
@@ -95,9 +85,8 @@
       padding: 0.4rem 0.2rem 0.6rem;
       font-size: 0.85rem;
       text-transform: uppercase;
-      color: #ffd700;
     }
-    .card span { display: block; font-size: 0.75rem; opacity: 0.8; color: #fff;}
+    .card span { display: block; font-size: 0.75rem; opacity: 0.8; }
 
     /* ===================== INFO SECTIONS ===================== */
     .sections {
@@ -153,15 +142,13 @@
   border: none;
   border-radius: 2rem;
   font-weight: 600;
-  font-size: 0.8rem;
-  padding: .3rem 1rem;
+  padding: .35rem 1.2rem;
   margin: .4rem auto .8rem;         /* centrado horizontal */
   display: flex;
   align-items: center;
   gap: .4rem;
   cursor: pointer;
   transition: opacity .2s ease;
-  text-decoration: none;
 }
 .btn-vermas:hover{opacity:.85;}
 .btn-vermas i{font-size:.8rem;}
@@ -178,13 +165,7 @@
 <body>
   <!-- ------------- HEADER ------------- -->
   <header>
-    <h1>
-    <span>Casa Ladys</span> <br>
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <hr style="width: 50%; background: #ffd700; height: 3px; border: none; border-radius: 2px;" />
-    </div>
-    La Serena y Coquimbo
-    </h1>
+    Casa Ladys – Escort en La Serena y Coquimbo
   </header>
 
   <!-- ------------- CONTACTO ------------- -->
@@ -205,99 +186,54 @@
   <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
 
   <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
+  <button class="btn-vermas" onclick="openGallery('megan')">
     VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
+  </button>
 </figure>
 
     <figure class="card">
-      <img src="linktree-assets/agencia/01/2.jpg" alt="Alexandra en lencería negra" />
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
       <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
     </figure>
 
     <figure class="card">
-      <img src="linktree-assets/agencia/01/3.jpg" alt="Megan en lencería roja" />
-      <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
-    </figure>
-
-    <figure class="card">
-      <img src="linktree-assets/agencia/01/4.jpg" alt="Alexandra en lencería negra" />
-      <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
-    </figure>
-
-        <figure class="card">
       <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
       <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
     </figure>
 
     <figure class="card">
       <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
       <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
     </figure>
 
         <figure class="card">
       <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
       <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
     </figure>
 
     <figure class="card">
       <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
       <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
     </figure>
 
         <figure class="card">
       <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
       <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
-
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
     </figure>
 
     <figure class="card">
       <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
       <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
+    </figure>
 
-        <!-- NUEVO -->
-  <a class="btn-vermas" href="https://scorts.elfaroprepago.cl/" target="_blank" rel="noopener">
-    VER MÁS <i class="fa-solid fa-arrow-right"></i>
-  </a>
+        <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Megan en lencería roja" />
+      <figcaption>MEGAN <span>22 años • Venezolana</span></figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="linktree-assets/agencia/01/1.jpg" alt="Alexandra en lencería negra" />
+      <figcaption>ALEXANDRA <span>28 años • Colombiana</span></figcaption>
     </figure>
 
     <!-- Duplica/edita según necesites -->
